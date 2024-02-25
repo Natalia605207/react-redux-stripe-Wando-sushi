@@ -1,0 +1,49 @@
+.all-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn_tabs {
+    padding: 15px 20px;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 2px solid #000000;
+    cursor: pointer;
+}
+
+.selected {
+    border-bottom: 2px solid #c31b30;
+    background: #2b2d2f;
+}
+
+.tab-info {
+    background: rgba(43,45,47,0.5);
+    padding: 50px 20px;
+    font-size: 18px;
+}
+
+.tab-content {
+    margin: 0px;
+}
+
+.grey {
+    color:#777A7C;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 540px) {
+    .btn_tabs {
+        padding: 10px 12px;
+        font-size: 18px;
+    }
+
+    .tab-info {
+        padding: 40px 12px;
+    }
+}
