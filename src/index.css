@@ -387,6 +387,7 @@ h3 {
   font-weight: bold;
   transform: scale(1);
 	animation: pulse 2s infinite;
+  text-align: center;
 }
 
 .form-input {
