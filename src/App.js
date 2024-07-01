@@ -44,9 +44,9 @@ const App = () => {
     }
   </div>
   <ScrollToTop />
-  <Navbar active={active} setActive={setActive}/>
+  <Navbar active={active} setActive={setActive} />
   <div className={active ? 'cart close': 'cart open'} >
-      <Cart />
+      <Cart active={active} setActive={setActive} />
       </div>
   <Routes>
     <Route path="/" element={<Home/>} />

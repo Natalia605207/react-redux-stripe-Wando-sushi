@@ -12,7 +12,7 @@ const DeliveryTerms = () => {
     const ctx = gsap.context(() => {
     tl.current = gsap
         .timeline()
-        .fromTo(".padding-top", { opacity: 0, scale: 0}, {  delay: 0.4, duration: 1, opacity: 1, scale: 1})
+        .fromTo(".padding-top", { opacity: 0, scale: 0}, {  delay: 0.3, duration: 1, opacity: 1, scale: 1})
         .fromTo(".padding-topAmount", { opacity: 0, scale: 0}, { duration: 1, opacity: 1, scale: 1});
     }, deliveryAnimation);
     return () => ctx.revert()

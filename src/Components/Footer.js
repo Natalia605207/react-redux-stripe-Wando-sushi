@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -17,7 +17,7 @@ const Footer = () => {
                 <FaFacebookF className="footer-icon" />
             </a>
             <a href='https://www.twitter.com' target="_blank" rel="noreferrer">
-                <FaTwitter className="footer-icon" />
+                <FaXTwitter className="footer-icon" />
             </a>
             <a href='https://www.instagram.com' target="_blank" rel="noreferrer">
                 <FaInstagram className="footer-icon" />
@@ -75,9 +75,9 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className="copyright">
+        <div className="copyright column">
             <p>© 2018 Copyright: Wando-sushi.com</p>
-
+            <p className="top-margin">Designed and developed by Natalia Musikhina</p>
         </div>
         </div>
     )
