@@ -5,7 +5,7 @@ import Parallax from "../Components/Parallax";
 
 const Home = () => {
     return(
-        <div>
+        <div> 
             <Parallax />
             <div className="container">
                 <AllCategories />

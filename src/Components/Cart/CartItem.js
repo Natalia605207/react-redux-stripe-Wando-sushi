@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { removeItemFromCart } from "../../redux/cartSlice";
 import { FaRegTrashAlt } from "react-icons/fa";
 
-
 const CartItem = ({cartItem}) => {
     const dishes = dataDishes.find(item => item.id === cartItem.dishId);
     const dispatch = useDispatch();

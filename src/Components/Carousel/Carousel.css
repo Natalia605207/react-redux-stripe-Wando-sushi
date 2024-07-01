@@ -58,7 +58,7 @@
     text-shadow: 2px 2px 12px #000000;
 }
 
-@media screen and (max-width: 540px) {
+@media all and (max-width: 540px) {
     .slide-text {
         font-size: 33px;
     }
