@@ -3,11 +3,11 @@ import Footer from "../Components/Footer";
 import { ScrollToTopBtn } from "../Components/ScrollToTopBtn";
 
 const Promo = () => {
-    return(<div>
+    return(<section>
         <Carousel />
         <Footer />
         <ScrollToTopBtn />
-    </div>)
+    </section>)
 }
 
 export default Promo;

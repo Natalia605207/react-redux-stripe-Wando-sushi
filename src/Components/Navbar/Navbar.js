@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { FaBars } from "react-icons/fa";
-import { FaShoppingBag } from "react-icons/fa";
+import { HiOutlineXMark } from "react-icons/hi2";
+import { HiOutlineBars2 } from "react-icons/hi2";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 import TotalArticlesNavbar from "../Cart/TotalArticlesNavbar";
 
-const Navbar = ({active, setActive}) => {
+const Navbar = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
-    const toggleCart = () => {
-        setActive(!active);
-    };
 
     return (
         <nav className="NavbarItems sticky">
@@ -22,7 +19,7 @@ const Navbar = ({active, setActive}) => {
                 </Link>
             </div>
             <div className="menu-icon" onClick={handleClick}>
-                <FaBars className="bar" />
+                {click ? <HiOutlineXMark className="bar" /> : <HiOutlineBars2 className="bar" />}
             </div>
             <div className={click ? "nav-menu active" : "nav-menu"}>
                 <ul className="nav-list">
@@ -38,9 +35,11 @@ const Navbar = ({active, setActive}) => {
                 </ul>
             </div>
             <div className="cart-quantity">
-                <button onClick={toggleCart} className="cart-btn"> 
-                    <FaShoppingBag className="cart-icon" />
+            <Link to="/cart" className="cart-link">
+                <button className="cart-btn"> 
+                    <HiOutlineShoppingBag className="cart-icon" />
                 </button>
+                </Link>
                 <TotalArticlesNavbar />
             </div>
         </nav>

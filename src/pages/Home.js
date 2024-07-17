@@ -6,7 +6,7 @@ import { ScrollToTopBtn } from "../Components/ScrollToTopBtn";
 
 const Home = () => {
     return(
-        <div> 
+        <section> 
             <ScrollToTopBtn />
             <FrontPage />
             <div className="container">
@@ -16,7 +16,7 @@ const Home = () => {
                 <Dishes />
             </div>
             <Footer />
-    </div>)
+    </section>)
 }
 
 export default Home;

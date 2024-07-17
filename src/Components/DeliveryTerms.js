@@ -1,7 +1,7 @@
 import { useRef, useLayoutEffect } from 'react';
 import { gsap } from "gsap";
-import { FaMobileAlt } from "react-icons/fa";
-import { FaShoppingBag } from "react-icons/fa";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 const DeliveryTerms = () => {
 
@@ -20,15 +20,15 @@ const DeliveryTerms = () => {
 
     return(
         <div>
-            <h3 className="center padding-delivery">Delivery</h3>
+            <h3 className="center padding">Delivery</h3>
             <div className="line" ref={deliveryAnimation}>
             <div className="column padding-top">
-            <FaMobileAlt className="delivery-icon" />
+            <HiOutlineDevicePhoneMobile className="delivery-icon" />
             <p className="deliveryTerms-heading">We accept orders</p>
             <p className="delivery-terms">daily, 9 A.M. - 10 P.M.</p>
             </div>
             <div className="column padding-topAmount">
-            <FaShoppingBag className="delivery-icon" />
+            <HiOutlineShoppingBag className="delivery-icon" />
             <p className="deliveryTerms-heading">Minimum order amount</p>
             <p className="delivery-terms">$30 (with all promos included)</p>
             </div>

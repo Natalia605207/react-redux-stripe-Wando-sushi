@@ -10,7 +10,7 @@ const Delivery = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     return(
-        <div>
+        <section>
             <div className="container">
             <DeliveryTerms />
             <AboutDelivery />
@@ -23,7 +23,7 @@ const Delivery = () => {
             </div>
             <Footer />
             <ScrollToTopBtn />
-    </div>)
+    </section>)
 }
 
 export default Delivery;

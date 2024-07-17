@@ -64,13 +64,16 @@ const Footer = () => {
                         CONTACT
                     </p>
                     <p className='link-margin link-name'>
-                        <FaLocationDot className='address-icon' />New York, NY 11122, US
+                        <FaLocationDot className='address-icon' />
+                        New York, NY 11122, US
                     </p>
                     <p className='link-margin link-name'>
-                        <FaEnvelope className='address-icon' />info@wando-sushi.com
+                        <FaEnvelope className='address-icon' />
+                        <a href='mailto:natalyaobukhova87@gmail.com' className='link-name'>info@wando-sushi.com</a>
                     </p>
                     <p className='link-margin link-name'>
-                        <FaPhoneAlt className='address-icon' />+ 01 234 567 88
+                        <FaPhoneAlt className='address-icon' />
+                        <a href='tel:+79168391700' className='link-name'>+ 01 234 567 88</a>
                     </p>
                 </div>
             </div>

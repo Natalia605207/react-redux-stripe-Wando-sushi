@@ -74,9 +74,13 @@
     border-bottom: 3px #c31b30 solid;
 }
 
+.cart-link {
+    text-decoration: none;
+}
+
 .bar {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .menu-icon {
@@ -95,9 +99,10 @@
 .cart-icon {
     color: #c31b30;
     border: none;
-    font-size: 30px;
+    font-size: 36px;
     animation: cart 1.5s ease-in-out infinite;
     animation-direction: alternate-reverse;
+    cursor: pointer;
 }
 
 .cart-btn {
@@ -167,7 +172,7 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .quantity {
         margin-right: 80px;
     }
@@ -183,7 +188,7 @@
     }
 
     .cart-icon {
-        font-size: 25px;
+        font-size: 29px;
     }
 
     .nav-list {
@@ -192,5 +197,9 @@
 
     .quantity {
         margin-right: 65px;
+    }
+
+    .bar {
+        font-size: 25px;
     }
 }

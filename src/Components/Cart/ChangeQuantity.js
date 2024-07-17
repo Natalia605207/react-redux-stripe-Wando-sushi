@@ -14,11 +14,13 @@ const ChangeQuantity = ({quantity, setQuantity}) => {
         setQuantity(newQuantity)
     }
 
-    return(<div className="quantity-control">
+    return(
+    <div className="quantity-control">
         <button className="addDeleteBtn" onClick={removeQuantity}><FaMinus className="minus"/></button>
         <span className="addedQuantity">{quantity}</span>
         <button className="addDeleteBtn" onClick={addQuantity}><FaPlus /></button>
-    </div>)
+    </div>
+    )
 }
 
 export default ChangeQuantity;

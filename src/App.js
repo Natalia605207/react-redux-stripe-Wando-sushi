@@ -13,10 +13,10 @@ import Cart from "./Components/Cart/Cart";
 import LoaderPage from "./Components/Loader/LoaderPage";
 import Modal from "./Components/Modal/Modal";
 import Content from "./Components/Modal/Content";
+import Stripe from "./Stripe/StripeContainer";
 
 
 const App = () => {
-  const [active, setActive] = useState(true);
   const [stateLoader, setStateLoader] = useState(true);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -44,14 +44,13 @@ const App = () => {
     }
   </div>
   <ScrollToTop />
-  <Navbar active={active} setActive={setActive} />
-  <div className={active ? 'cart close': 'cart open'} >
-      <Cart active={active} setActive={setActive} />
-      </div>
+  <Navbar />
   <Routes>
-    <Route path="/" element={<Home/>} />
-    <Route path="/promo" element={<Promo/>} />
-    <Route path="/delivery" element={<Delivery/>} />
+    <Route path="/" element={<Home />} />
+    <Route path="/promo" element={<Promo />} />
+    <Route path="/delivery" element={<Delivery />} />
+    <Route path="/cart" element={<Cart />} />
+    <Route path="/payment" element={<Stripe />} />
   </Routes>
 </Router>
 }

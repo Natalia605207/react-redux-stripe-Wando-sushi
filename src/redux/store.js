@@ -5,7 +5,7 @@ import cart from './cartSlice';
 
 export const store = configureStore({
   reducer: {
-    dishes: dishes,
+    dishes,
     cart
   },
 })

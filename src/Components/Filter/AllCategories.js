@@ -2,7 +2,7 @@ import Filter from "./Filter";
 
 const AllCategories = () => {
     return(
-        <div>
+        <div id="menu">
             <h3 className="center">Our Menu</h3>
             <div className="line">
             {['ALL', 'SOUP', 'SALAD', 'SUSHI', 'ROLLS', 'SETS', 'DESSERTS']

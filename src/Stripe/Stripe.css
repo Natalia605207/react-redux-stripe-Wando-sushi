@@ -1,0 +1,87 @@
+.payment-page {
+    display: flex;
+    justify-content: center;
+    min-height: 87vh;
+}
+
+.card {
+    background:#F5F5DC;
+    padding: 30px 5px;
+}
+
+.stripe-box {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 120px 10px;
+    color:#ffffff;
+}
+
+.payment-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pay-btn {
+    margin-top: 50px;
+    font-size: 16px;
+    padding: 10px 35px;
+    background: #202020;
+    border: 1px solid #F5F5DC;
+    color:#ffffff;
+    width: 150px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    border: 1px solid #b7b729;
+}
+
+.confirm-answer {
+    padding: 120px 5px;
+    border: none;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.payment-success {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.payment-enjoy {
+    font-size: 17px;
+}
+
+.checkmark {
+    font-size: 35px;
+    margin-bottom: 6px;
+    color:#b7b729;
+}
+
+@media screen and (max-width: 540px) {
+    .payment-success {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .payment-enjoy {
+        font-size: 14px;
+    }
+    
+    .checkmark {
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+
+    .stripe-box {
+        width: 90%;
+    }
+}
