@@ -80,7 +80,8 @@ const Footer = () => {
         </div>
         <div className="copyright column">
             <p>© 2018 Copyright: Wando-sushi.com</p>
-            <p className="top-margin">Designed and developed by Natalia Musikhina</p>
+            <p className="top-margin">Designed and developed by <a href="https://natalia-webdev.com/" target="_blank" rel="noreferrer" className="portfolio-link">Natalia Musikhina</a>
+            </p>
         </div>
         </div>
     )

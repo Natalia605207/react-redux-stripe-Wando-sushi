@@ -462,6 +462,16 @@ h3 {
   padding-bottom: 80px;
 }
 
+.portfolio-link {
+  text-decoration: underline;
+  color: #777A7C;
+}
+
+.portfolio-link:hover {
+  color:#91000F;
+  text-decoration: underline;
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
